@@ -21,10 +21,9 @@
 title: 神の光
 email: unspecified
 description: >- # this means to ignore newlines until "baseurl:"
-  testing github/jeykll capabilities for blogging purposes.
-  i am probably going to forget this.
+  remaking a wordpress theme from sight seems it'll be easier than attempting to port. but either way it's a pain.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "I:/Programming_stuff/kami_no_hikari" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: rezzealaux
 github_username:  rezzealaux
 
@@ -55,7 +54,13 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-### the above were given setttings. the below are added settings.
+### the above were given settings. the below are added settings.
 
 # URL style
 permalink: /:year/:month/:day/:title/
+
+defaults:
+  - scope:
+      path: "images"
+    values:
+      image: true
