@@ -24,7 +24,6 @@ description: >- # [jekyll-seo-tag] hooks here and puts it as preview text.
   remaking a wordpress theme from sight seems it'll be easier than attempting to port.
 baseurl: "" # the subpath of your site, e.g. /blog ### we won't need to touch this.
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-        # previously put local folder here. seems to work fine now anyway?
 twitter_username: rezzealaux
 github_username:  rezzealaux
 
