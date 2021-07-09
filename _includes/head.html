@@ -2,10 +2,15 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:image" content="{{ "/images/7084d2cca87a1fe617ca253a07f2a04b.png" | relative_url }}" /> <!-- social media preview image. doesn't work. not picking up relative url. -->
+  
+  <meta property="og:image" content="{{ site.url }}/images/4b3adf7bdfb591eb87bb010373a94bf4.png"> <!-- preview image -->
+  <!-- why does this read [site.url] with no pointers while [absolute_url] requires input in [_config], and [relative_url] gives nothing? -->
+  <!-- who fucking knows! the docs are absolute fucking garbage! -->
+
   {%- seo -%}
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}"> <!-- seems the point is to keep it pointed at top level ????????? -->
   <link rel="shortcut icon" type="image/png" href="{{ "icon.png" | relative_url }}"> <!-- icon -->
+
   {%- feed_meta -%}
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
